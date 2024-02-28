@@ -6,7 +6,7 @@ public class PlayerHealth : MonoBehaviour
     public float MaxValue = 100;
     public Slider Healthbar;
 
-	//Не забудь указать ссылки на эти UI элементы в сцене
+    //Не забудь указать ссылки на эти UI элементы в сцене
     //public GameObject PlayerUI;
     //public GameObject GameOverUI;
 
@@ -24,7 +24,7 @@ public class PlayerHealth : MonoBehaviour
         if (_currentValue <= 0)
         {
             _currentValue = 0;
-			//Если здоровья не осталось, вызвать метод конца игры
+            //Если здоровья не осталось, вызвать метод конца игры
             //???();
         }
         UpdateHealthbar();
@@ -37,7 +37,7 @@ public class PlayerHealth : MonoBehaviour
 
     void GameOver()
     {
-		//включить или отключить объекты и компоненты
+        //включить или отключить объекты и компоненты
         //PlayerUI.SetActive(???);
         //GameOverUI.SetActive(???);
         //GetComponent<Player>().enabled = ???;
